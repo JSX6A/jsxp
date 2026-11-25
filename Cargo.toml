@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/jsxp-core",
+    "crates/jsxp-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "AGPL-3.0-only"
+authors = ["José Alejandro González Gil"]
+
+[workspace.dependencies]
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+walkdir = "2.5"
+rayon = "1.10"
+memmap2 = "0.9"
+blake3 = "1.5"
+redb = "2.1"
+yara-x = "0.6"
